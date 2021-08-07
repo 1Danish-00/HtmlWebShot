@@ -1,7 +1,7 @@
 # HtmlWebShot  
 [![PyPI version](https://badge.fury.io/py/htmlwebshot.svg)](https://badge.fury.io/py/htmlwebshot)
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/4ffdde720ca542a2973b3a79da61bd70)](https://www.codacy.com?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=1Danish-00/HtmlWebShot&amp;utm_campaign=Badge_Grade)
-[![Licence](https://img.shields.io/github/license/1Danish-00/HtmlWebShot.svg)](https://github.com/1Danish-00/HtmlWebShot/blob/main/LICENSE)  
+[![Licence](https://img.shields.io/github/license/1danish-00/htmlwebshot.svg)](https://github.com/1Danish-00/HtmlWebShot/blob/main/LICENSE)  
 
 A python3 package which Can Create Images From url, Html-CSS, Svg and from any readable file and texts with many setup features.
 
