@@ -1,7 +1,8 @@
 # HtmlWebShot  
-[![PyPI version](https://badge.fury.io/py/htmlwebshot.svg)](https://badge.fury.io/py/htmlwebshot)
+[![PyPI version](https://badge.fury.io/py/htmlwebshot.svg)](https://pypi.org/project/htmlwebshot/)
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/4ffdde720ca542a2973b3a79da61bd70)](https://www.codacy.com?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=1Danish-00/HtmlWebShot&amp;utm_campaign=Badge_Grade)
-[![Licence](https://img.shields.io/github/license/1danish-00/htmlwebshot.svg)](https://github.com/1Danish-00/HtmlWebShot/blob/main/LICENSE)  
+[![Licencse](https://img.shields.io/github/license/1danish-00/htmlwebshot.svg)](https://github.com/1Danish-00/HtmlWebShot/blob/main/LICENSE)
+[![PyPI downloads](https://img.shields.io/pypi/dm/htmlwebshot?label=DOWNLOADS&color=blue)](https://pypi.org/project/htmlwebshot/)  
 
 A python3 package which Can Create Images From url, Html-CSS, Svg and from any readable file and texts with many setup features.
 
@@ -22,8 +23,10 @@ A python3 package which Can Create Images From url, Html-CSS, Svg and from any r
       ```  
   * Alternative Support  
       ```
-      $ wget https://github.com/1Danish-00/HtmlWebShot/raw/main/script.sh && sh script.sh
-      ```
+      $ wget https://github.com/1Danish-00/HtmlWebShot/raw/main/script.sh | sh
+      ```  
+  * Win / Arch / Others  
+      [`click here`](https://wkhtmltopdf.org/downloads.html)  
 
 ## Usage  
 
@@ -133,7 +136,7 @@ shot.create_pic(html="jsgraph.html")
 </details>
 
 ```py
-from kk.htmlwebshot import WebShot
+from htmlwebshot import WebShot
 shot = WebShot()
 
 shot.flags = ["--quiet"]
@@ -213,6 +216,9 @@ shot.params = {
 ```
 
 ### Config Path  
+
+If you installed pkg directly then no need to configure it, It'll auto configure.  
+But If u installed externally then you have to setup config path.  
 
 ```py
 from htmlwebshot import WebShot, Config

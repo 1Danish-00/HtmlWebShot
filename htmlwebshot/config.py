@@ -4,7 +4,7 @@
 import shutil
 
 
-class Config(object):
+class Config:
 
     """Config class to configure path of wkhtmltoimage, wkhtmltopdf"""
 

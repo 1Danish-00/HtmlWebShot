@@ -146,8 +146,6 @@ class WebShot:
     @output.setter
     def output(self, loc):
         loc = os.path.abspath(loc)
-        file = loc.split("/")[-1]
-        os.makedirs(loc.replace(file, ""), exist_ok=True)
         self._output = loc
 
     def create_pic(
@@ -157,6 +155,7 @@ class WebShot:
         css=None,
         other=None,
         size=(None, None),
+        quality=None,
         output=None,
         *args,
         **kwargs,
@@ -168,12 +167,15 @@ class WebShot:
                    :: css :: str :: file or text (css)
                    :: other :: str :: file or text (any)
                    :: size :: tuple (int, int) :: height & width :: default full-screen
+                   :: quality :: int :: from 0 to 100
                    :: output :: str :: path to save image
 
         return :: str :: saved image path
         """
         if size[0] and size[1]:
             self.size = size
+        if quality:
+            self.quality = quality
         self.output = "webshot.png" if not output else output
         self.source_set(url, html, css, other)
         path = Clickit().create_stuff(
@@ -204,6 +206,7 @@ class WebShot:
         other=None,
         output=None,
         size=(None, None),
+        quality=None,
         *args,
         **kwargs,
     ):
@@ -214,6 +217,7 @@ class WebShot:
                    :: css :: str :: file or text (css)
                    :: other :: str :: file or text (any)
                    :: size :: tuple (int, int) :: height & width :: default full-screen
+                   :: quality :: int :: from 0 to 100
                    :: output :: str :: path to save image
 
         return :: str :: saved image path
@@ -222,6 +226,8 @@ class WebShot:
         self.output = "webshot.png" if not output else output
         if size[0] and size[1]:
             self.size = size
+        if quality:
+            self.quality = quality
         result = await Clickit().create_stuff_async(
             self.config[1],
             self.flags,

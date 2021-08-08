@@ -3,24 +3,26 @@ import setuptools
 with open("README.md", "r", encoding="utf-8") as f:
     long_desc = f.read()
 
+
 name = "htmlwebshot"
-version = "v0.1"
+version = "v0.1.1"
 author = "1Danish-00"
 author_email = "danish@ultroid.tech"
-desc = "Create Image Of Anything. (files/text/urls)"
+desc = "Create Web Preview Images From url, Html-CSS ,svg, any other readable file or string."
 lic = "GNU AFFERO aa rha posts GENERAL PUBLIC LICENSE (v3)"
 url = "https://github.com/1Danish-00/htmlwebshot/"
 project_urls = {
     "Bug Tracker": "https://github.com/1Danish-00/htmlwebshot/issues",
 }
+reqs = ["asyncio"]
 keys = [
     "screenshot",
+    "Webshot",
     "url to image",
     "html to image",
     "css to image",
     "svg to image",
-    "web image",
-    "Webshot",
+    "text to image",
     "file to image",
 ]
 classifiers = [
@@ -31,9 +33,13 @@ classifiers = [
     "Programming Language :: Python :: 3.9",
     "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
     "Operating System :: OS Independent",
+    "Topic :: Text Processing",
+    "Topic :: Text Processing :: General",
+    "Topic :: Text Processing :: Markup",
+    "Topic :: Text Processing :: Markup :: HTML",
+    "Topic :: Text Processing :: Markup :: XML",
+    "Topic :: Utilities",
 ]
-
-reqs = ["asyncio"]
 
 setuptools.setup(
     name=name,

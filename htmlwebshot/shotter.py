@@ -104,7 +104,7 @@ class Clickit:
                 setup.append(str(quality))
         if delay:
             setup.append("--javascript-delay")
-            setup.append(str(delay))
+            setup.append(str(delay * 1000))
         setup.append(file)
         setup.append(output)
         return setup
