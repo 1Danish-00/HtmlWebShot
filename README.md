@@ -39,8 +39,8 @@ shot = WebShot()
 ##### Multiple Arguments  
 
 * `size`: (int , int) : tuple : height, width default: full-screen
-* `quality`: int : (between 0-100)
-* `delay`: float : delay time to load page
+* `quality`: int : between 1 to 100
+* `delay`: float : delay time in sec to load page
 * `flags`: list : [know More](#flags-uses)
 * `params`: dict : [know more](#available-params)
 * `config`: path setup [know more](#config-path)

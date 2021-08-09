@@ -192,7 +192,7 @@ class WebShot:
         if self.cache:
             os.remove(self.cache)
             del self.cache
-        # as per issue https://github.com/1Danish-00/htmlwebshot/blob/f1089bfd172c70b31fee76bfb17ea6d013b3a6a3/htmlwebshot/shotter.py#L172
+        # as per issue https://github.com/1Danish-00/HtmlWebShot/blob/1269c9364e7fae6cd5c5bfd0ee7c5a88c0af0b48/htmlwebshot/shotter.py#L172
         # need to rename as per output
         if path != self.output:
             os.rename(path, self.output)
@@ -238,7 +238,7 @@ class WebShot:
             self.file,
             self.output,
         )
-        # as per issue https://github.com/1Danish-00/htmlwebshot/blob/main/htmlwebshot/shotter.py#L172
+        # as per issue https://github.com/1Danish-00/HtmlWebShot/blob/1269c9364e7fae6cd5c5bfd0ee7c5a88c0af0b48/htmlwebshot/shotter.py#L172
         # need to rename as per output
         if result != self.output:
             os.rename(result, self.output)

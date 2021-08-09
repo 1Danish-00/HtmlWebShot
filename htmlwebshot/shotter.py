@@ -103,8 +103,9 @@ class Clickit:
                 setup.append("--quality")
                 setup.append(str(quality))
         if delay:
+            # converting float seconds to int milliseconds
             setup.append("--javascript-delay")
-            setup.append(str(delay * 1000))
+            setup.append(str(int(delay * 1000)))
         setup.append(file)
         setup.append(output)
         return setup
@@ -140,9 +141,11 @@ class Clickit:
                 data.append(str(time.time()).split(".")[0] + ".jpg")
                 proc = self._proc(data)
                 if proc and "Error:" in proc:
-                    raise SystemError(re.findall("Error:(.*)", proc))
+                    catch = re.findall("Error:(.*)", proc)
+                    raise SystemError(catch)
             elif re.search("Error:", proc):
-                raise SystemError(re.findall("Error:(.*)", proc))
+                catch = re.findall("Error:(.*)", proc)
+                raise SystemError(catch)
         return data[-1]
 
     async def _sh(self, data):
@@ -177,7 +180,9 @@ class Clickit:
                 setups.append(str(time.time()).split(".")[0] + ".jpg")
                 err = await self._sh(setups)
                 if err and "Error:" in err:
-                    raise SystemError(re.findall("Error:(.*)", err))
+                    catch = re.findall("Error:(.*)", err)
+                    raise SystemError(catch)
             elif re.search("Error:", err):
-                raise SystemError(re.findall("Error:(.*)", err))
+                catch = re.findall("Error:(.*)", err)
+                raise SystemError(catch)
         return setups[-1]
