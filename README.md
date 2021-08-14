@@ -1,5 +1,5 @@
 # HtmlWebShot  
-[![PyPI version](https://badge.fury.io/py/htmlwebshot.svg)](https://pypi.org/project/htmlwebshot/)
+[![PyPI version](https://img.shields.io/pypi/v/htmlwebshot?&color=blue)](https://pypi.org/project/htmlwebshot/)
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/4ffdde720ca542a2973b3a79da61bd70)](https://www.codacy.com?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=1Danish-00/HtmlWebShot&amp;utm_campaign=Badge_Grade)
 [![Licencse](https://img.shields.io/github/license/1danish-00/htmlwebshot.svg)](https://github.com/1Danish-00/HtmlWebShot/blob/main/LICENSE)
 [![PyPI downloads](https://img.shields.io/pypi/dm/htmlwebshot?label=DOWNLOADS&color=blue)](https://pypi.org/project/htmlwebshot/)  

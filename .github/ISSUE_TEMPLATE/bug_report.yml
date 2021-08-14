@@ -18,7 +18,7 @@ body:
   - type: dropdown
     id: pyversion
     attributes:
-      label: Version
+      label: Python Version
       description: Your Python version?
       options:
         - latest
@@ -34,10 +34,11 @@ body:
   - type: dropdown
     id: version
     attributes:
-      label: Version
+      label: HtmlWebShot Version
       description: Which version of htmlwebshot are you using?
       options:
         - latest
+        - v0.1.1
         - v0.1
         - pre-release
     validations:
@@ -54,11 +55,12 @@ body:
   - type: textarea
     id: code
     attributes:
-      label: Paste Your Codes.
-      description: Paste Your Code
+      label: Used Code.
+      description: Paste Your Code Here
       render: python
   - type: textarea
     id: error
     attributes:
-      label: Your Error Logs.
+      label: Error Logs.
+      description: Paste Your Errors
       render: shell
