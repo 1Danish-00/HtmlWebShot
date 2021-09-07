@@ -80,7 +80,7 @@ shot.create_pic(other=text, size=(100,200))
 
 You can use with async too  
 ```py
-await shot.create_pic_async( # parameters are same for both
+await shot.create_pic_async( # parameters are same for both)
 ```  
 
 ### Some Examples  
