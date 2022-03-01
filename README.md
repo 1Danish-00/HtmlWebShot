@@ -222,6 +222,11 @@ But If u installed externally then you have to setup config path.
 
 ```py
 from htmlwebshot import WebShot, Config
-shot = WebShot()
-shot.config = Config(wkhtmltopdf="/path/to/wkhtmltopdf", wkhtmltoimage="/path/to/wkhtmltoimage")
+shot = WebShot(
+    quality=80,
+    config=Config(
+        wkhtmltopdf="C:\Program Files\wkhtmltopdf\\bin\wkhtmltopdf.exe",
+        wkhtmltoimage="C:\Program Files\wkhtmltopdf\\bin\wkhtmltoimage.exe",
+    ),
+)
 ```
