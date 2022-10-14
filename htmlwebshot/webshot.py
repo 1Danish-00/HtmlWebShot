@@ -8,7 +8,7 @@ from .shotter import Clickit
 
 class WebShot:
 
-    """main class to pass config and parameters and get return results"""
+    """main class to pass config and parameters and get return results."""
 
     def __init__(
         self,
